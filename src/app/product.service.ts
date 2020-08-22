@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { of, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
@@ -8,14 +8,13 @@ import { map } from 'rxjs/operators';
 })
 export class ProductService {
   private _ablumUrl = '../assets/album.json';
-  response: any;
   constructor(private _http: HttpClient) {}
 
   getAlbum(id: number): Observable<any> {
 
      return this._http.get<any>(this._ablumUrl).pipe(
-       map((res: Response) => {
-         return res;
+       map((album: Response) => {
+         return album;
        }
        ));
   }
