@@ -47,7 +47,7 @@
     "zone.js": "^0.11.1"
   },
   "devDependencies": {
-    "@angular/cli": "10.0.6",
+    "@angular/cli": "^10.0.7",
     "@angular/compiler-cli": "5.2.0",
     "@angular/language-service": "5.2.0",
     "@phenomnomnominal/tsquery": "2.1.1",
